@@ -1,0 +1,350 @@
+.post-feed-page {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.left-sidebar {
+  margin-right: 20px;
+  background-color: var(--light);
+  box-shadow: var(--shadow);
+}
+
+.right-sidebar {
+  margin-left: 20px;
+  background-color: var(--light);
+  box-shadow: var(--shadow);
+}
+
+.sidebar h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.feed {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.feed h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Post Creation Styles */
+.post-creation {
+  background-color: var(--light);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+
+.post-creation-input textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.post-creation-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload-button {
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #f0d0ff;
+}
+
+.post-creation-actions button {
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.post-creation-actions button:hover {
+  background-color: #d65252;
+}
+
+.preview-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Post Styles */
+.post {
+  background-color: var(--light);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.user-info {
+  font-weight: bold;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.post-content {
+  margin-bottom: 15px;
+}
+
+.post-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.post-actions button:hover {
+  color: var(--accent);
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--light);
+  padding: 30px;
+  border-radius: 15px;
+  width: 600px;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.modal h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.modal input[type="text"],
+.modal textarea,
+.modal select,
+.modal input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.modal input[type="text"]:focus,
+.modal textarea:focus,
+.modal select:focus,
+.modal input[type="date"]:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.modal textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.modal button[type="submit"] {
+  background-color: var(--accent);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.modal button[type="submit"]:hover {
+  background-color: #d65252;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: var(--primary);
+}
+
+/* Button Styles */
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #63427a;
+}
+
+/* Prayer Actions Styles */
+.prayer-actions {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the start */
+  gap: 10px; /* Add some space between the buttons */
+  margin-top: 10px; /* Add some space above the buttons */
+}
+
+/* Prayer Actions Button Styles */
+.prayer-actions button {
+  background-color: var(--accent);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.prayer-actions button:hover {
+  background-color: #d65252;
+}
+
+/* Prayer Statistics Styles */
+.prayer-stats {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.prayer-stats h4 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.prayer-stats p {
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .post-feed-page {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar, .feed {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 10px;
+  }
+
+  .left-sidebar, .right-sidebar {
+    margin: 0 0 20px 0;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+}
